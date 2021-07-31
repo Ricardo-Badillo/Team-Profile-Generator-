@@ -14,10 +14,9 @@ const teamMembers = [];
 
 function newEmployee() {
     console.log("Build your team");
-    return inquirer
-    .prompt([
+    return inquirer.prompt([
         {
-            type: 'input',
+            type: 'list',
             name: 'employee',
             message: 'Which member would you like to add to your team?',
             choices: [
@@ -44,8 +43,7 @@ function newEmployee() {
 }
 
 function newManager() {
-    inquirer
-    .prompt([
+    inquirer.prompt([
         {
             type: 'input',
             name: 'name',
@@ -82,8 +80,7 @@ function newManager() {
 }
 
 function newEngineer () {
-    inquirer
-    .prompt([
+    inquirer.prompt([
         {
             type: 'input',
             name: 'name',
@@ -121,8 +118,7 @@ function newEngineer () {
 }
 
 function newIntern () {
-    inquirer
-    .prompt([
+    inquirer.prompt([
         {
             type: 'input',
             name: 'name',
